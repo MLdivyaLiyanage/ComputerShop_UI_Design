@@ -1,0 +1,41 @@
+/* Container for the carousel */
+.carousel-container {
+  max-width: 800px; /* Set maximum width of the carousel */
+  max-height: 500px; /* Set maximum height of the carousel */
+  margin: 0 auto; /* Center the carousel horizontally */
+  border: 2px solid #ddd; /* Add a border for the carousel */
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* For absolute positioning of inner elements */
+}
+
+/* Carousel items (slides) */
+.carousel-container .carousel-item {
+  height: 500px; /* Adjust the height of each slide */
+}
+
+/* Example carousel images */
+.carousel-container .carousel-item img {
+  width: 100%; /* Make the images responsive */
+  height: 100%; /* Stretch images to fill the slide */
+  object-fit: cover; /* Cover the entire slide */
+}
+
+/* Optional: Adjust caption positioning and styling */
+.carousel-container .carousel-caption {
+  bottom: 20px; /* Adjust the vertical position of the caption */
+  background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Optional: round corners */
+}
+
+/* Responsive design: Adjust the carousel size for smaller screens */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 100%; /* Full width on smaller screens */
+    max-height: 300px; /* Reduce height for smaller screens */
+  }
+
+  .carousel-container .carousel-item {
+    height: 300px; /* Adjust the height for smaller screens */
+  }
+}
